@@ -25,7 +25,7 @@ Dennis McIntosh[^4]
   
 - [Gallery](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#gallery)
 
-- [Description](
+- [Description](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#description)
 
 
 ## Description

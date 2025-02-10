@@ -15,8 +15,11 @@ A footnote can also have multiple lines[^2].
 
 <summary> Table of contents </summary>
 - Poster 
+
 - Data and Tables
+  
 - Power Point Presentation
+  
 - Gallery
 
 </details>

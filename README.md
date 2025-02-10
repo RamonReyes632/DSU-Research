@@ -14,6 +14,7 @@ A footnote can also have multiple lines[^2].
 <details>
 
 <summary> Table of contents </summary>
+
 - Poster 
 
 - Data and Tables

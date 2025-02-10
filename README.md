@@ -16,7 +16,7 @@ A footnote can also have multiple lines[^2].
 
 
 
-### Table of contents
+## Table of contents
 
 - Poster 
 

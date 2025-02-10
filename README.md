@@ -18,7 +18,7 @@ A footnote can also have multiple lines[^2].
 
 ## Table of contents
 
-- Poster [https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#poster-once-completed]
+- [Poster](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#poster-once-completed)
 
 - Data and Tables
   

@@ -17,7 +17,7 @@ Dennis McIntosh[^4]
 
 ## Table of contents
 
-- [Abstract](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#description)
+- [Abstract]()
 
 - [Poster](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#poster-once-completed)
 

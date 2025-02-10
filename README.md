@@ -25,10 +25,10 @@ Dennis McIntosh[^4]
   
 - [Gallery](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#gallery)
 
-- [Description](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#description)
+- [Abstract](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#description)
 
 
-## Description
+## Abstract
 
 ## Poster (work in progress)
 ![Slide1](https://github.com/user-attachments/assets/707495b9-9ce4-4efb-b6b7-c407d24186f1)

@@ -13,17 +13,11 @@ A footnote can also have multiple lines[^2].
 
 <details>
 
-<summary> #Tips for collapsed sections </summary>
-
-### You can add a header
-
-You can add text within a collapsed section.
-
-You can add an image or a code block, too.
-
-```ruby
-   puts "Hello World"
-```
+<summary> Table of contents </summary>
+- Poster 
+- Data and Tables
+- Power Point Presentation
+- Gallery
 
 </details>
 

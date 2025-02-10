@@ -5,9 +5,7 @@
 
 ## References/Footnotes
 
-Here is a simple footnote[^1].
-
-A footnote can also have multiple lines[^2].
+Ramon Reyes Rivas[^1] , Grant S. Blank[^2],  Angel Calon-Zapata[^3], and Dennis McIntosh[^4]​
 
 [^1]: My reference.
 [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
@@ -28,12 +26,12 @@ A footnote can also have multiple lines[^2].
 
 
 
-## Poster (once completed)
+## Poster (work in progress)
 ![Slide1](https://github.com/user-attachments/assets/707495b9-9ce4-4efb-b6b7-c407d24186f1)
 
 
 ## Data and Tables (using Julia/Python)
-
+Example
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")

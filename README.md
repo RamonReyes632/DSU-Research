@@ -5,13 +5,12 @@
 
 ## References/Footnotes
 
-Ramon Reyes Rivas[^1], Grant S. Blank[^2],
-Angel Calon-Zapata[^3]
-Dennis McIntosh[^4]​
+Ramon Reyes Rivas[^1], Grant S. Blank[^2], Angel Calon-Zapata[^3], and Dennis McIntosh[^4]​
 
-[^1]: My reference.
-[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-  This is a second line.
+[^1]: Ramon Reyes Rivas
+[^2]: Grant S. Blank
+[^3]: Angel Calon-Zapata
+[^4]​: Dennis McIntosh
 
 
 

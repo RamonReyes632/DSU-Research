@@ -8,12 +8,11 @@
 Ramon Reyes Rivas[^1]
 Grant S. Blank[^2]
 Angel Calon-Zapata[^3]
-Dennis McIntosh[^4]
+Dennis McIntosh [^4]
 
 [^1]: Ramon Reyes Rivas.
 [^2]: Grant S. Blank.
 [^3]: Angel Calon-Zapata.
-
 [^4]​: Dennis McIntosh.  
 
 ## Table of contents

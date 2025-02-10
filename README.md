@@ -20,11 +20,11 @@ A footnote can also have multiple lines[^2].
 
 - [Poster](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#poster-once-completed)
 
-- Data and Tables
+- [Data and Tables](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#data-and-tables-using-juliapython)
   
-- Power Point Presentation
+- [Power Point Presentation](
   
-- Gallery
+- [Gallery](
 
 
 

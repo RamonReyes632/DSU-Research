@@ -1,6 +1,6 @@
-# DSU-Research
+## DSU-Research
 
-## Bio Filter Media Project
+# Bio Filter Media Project
 
 ![Slide1](https://github.com/user-attachments/assets/51adfdf0-8bce-4e0e-890b-8938a8949921)
 
@@ -19,3 +19,6 @@
 ![Slide8](https://github.com/user-attachments/assets/93cb313c-eafe-4d64-993f-6df94129ab15)
 
 ![Slide9](https://github.com/user-attachments/assets/0ddc33c3-a942-4e4f-b209-60f24877b0c5)
+
+
+## Gallery

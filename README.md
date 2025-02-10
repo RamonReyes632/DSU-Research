@@ -2,6 +2,9 @@
 
 # Bio Filter Media Project
 
+
+## References/Footnotes
+
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].
@@ -11,9 +14,9 @@ A footnote can also have multiple lines[^2].
   This is a second line.
 
 
-<details>
 
-<summary> Table of contents </summary>
+
+### Table of contents
 
 - Poster 
 
@@ -23,7 +26,6 @@ A footnote can also have multiple lines[^2].
   
 - Gallery
 
-</details>
 
 
 ## Poster (once completed)

@@ -24,7 +24,7 @@ A footnote can also have multiple lines[^2].
   
 - [Power Point Presentation](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#power-point-presentation)
   
-- [Gallery](
+- [Gallery](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#gallery)
 
 
 

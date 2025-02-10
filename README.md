@@ -1,5 +1,7 @@
 ## DSU-Research
 
+# Bio Filter Media Project
+
 Here is a simple footnote[^1].
 
 A footnote can also have multiple lines[^2].
@@ -9,7 +11,35 @@ A footnote can also have multiple lines[^2].
   This is a second line.
 
 
-# Bio Filter Media Project
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section.
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+
+## Poster (once completed)
+
+## Data and Tables (using Julia/Python)
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+
+## Power Point Presentation
 
 ![Slide1](https://github.com/user-attachments/assets/51adfdf0-8bce-4e0e-890b-8938a8949921)
 
@@ -32,28 +62,6 @@ A footnote can also have multiple lines[^2].
 
 ## Gallery
 
-# Example headings
 
-## Sample Section
 
-## This'll be a _Helpful_ Section About the Greek Letter Θ!
-A heading containing characters not allowed in fragments, UTF-8 characters, two consecutive spaces between the first and second words, and formatting.
-
-## This heading is not unique in the file
-
-TEXT 1
-
-## This heading is not unique in the file
-
-TEXT 2
-
-# Links to the example headings above
-
-Link to the sample section: [Link Text](#sample-section).
-
-Link to the helpful section: [Link Text](#thisll-be-a-helpful-section-about-the-greek-letter-Θ).
-
-Link to the first non-unique section: [Link Text](#this-heading-is-not-unique-in-the-file).
-
-Link to the second non-unique section: [Link Text](#this-heading-is-not-unique-in-the-file-1).
 

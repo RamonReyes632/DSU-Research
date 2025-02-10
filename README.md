@@ -29,6 +29,8 @@ A footnote can also have multiple lines[^2].
 
 
 ## Poster (once completed)
+![Slide1](https://github.com/user-attachments/assets/707495b9-9ce4-4efb-b6b7-c407d24186f1)
+
 
 ## Data and Tables (using Julia/Python)
 

@@ -13,7 +13,7 @@ A footnote can also have multiple lines[^2].
 
 <details>
 
-<summary>Tips for collapsed sections</summary>
+<summary> #Tips for collapsed sections </summary>
 
 ### You can add a header
 

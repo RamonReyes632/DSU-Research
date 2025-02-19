@@ -67,6 +67,11 @@ puts markdown.to_html
 
 
 ## Gallery
+![IMG_0715](https://github.com/user-attachments/assets/0bbc22c7-013e-4787-925f-0a253e9b187d)
+
+![IMG_3486](https://github.com/user-attachments/assets/aad2edc2-4421-4774-b6a8-e789de7a81d7)
+
+
 
 
 

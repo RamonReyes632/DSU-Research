@@ -38,7 +38,7 @@ Dennis McIntosh[^4]
 
 ## Data and Tables (using Julia/Python)
 
-### Bio-media Filtration daily water quality
+### Bio-media Filtration
 
 #### Dependencies
 ````julia
@@ -259,7 +259,7 @@ with_theme() do
 	df.DO_MA = [mean(df.DO_mg_L[max(1, i-window_size+1):i]) for i in 1:nrow(df)]
 	df.pH_MA = [mean(df.pH[max(1, i-window_size+1):i]) for i in 1:nrow(df)]
 end
-
+````
 ````julia
 with_theme() do
 	# 1. Temperature over time with trend line

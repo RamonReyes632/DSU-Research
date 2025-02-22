@@ -44,6 +44,41 @@ markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
 
+````julia
+using CSV, CairoMakie , DataFrames, Dates, Statistics, Random, AlgebraOfGraphics
+
+
+Data 
+
+begin
+    # Load the CSV file
+    file_path = "/Users/renzo/Documents/Ramons_Code/Files/Bio_media_sheet_1.csv"
+    df = CSV.read(file_path, DataFrame, header=2)  # Skip the first row
+
+    # Rename columns properly
+    rename!(df, Dict(
+        "Date" => :Date,
+        "Tank Number" => :Tank_Number,
+        "Filtration Treatment " => :Filter_Treatment,  # Trimmed space in column name
+        "Ammonia" => :Ammonia_mg_L,
+        "Nitrite" => :Nitrite_mg_L,
+        "Trial" => :Trial
+    ))
+
+    # Convert data types
+    df.Date = Date.(df.Date, dateformat"mm/dd/yy")  # Corrected date format
+    df.Tank_Number = Int.(df.Tank_Number)  # Ensure tank number is integer
+    df.Ammonia_mg_L = Float64.(df.Ammonia_mg_L)  # Convert Ammonia to float
+    df.Nitrite_mg_L = Float64.(df.Nitrite_mg_L)  # Convert Nitrite to float
+	
+    # Save cleaned data
+    #CSV.write("Cleaned_Bio_media_measurements_corrected.csv", df)
+
+    # Display cleaned data
+    df
+end
+````
+
 
 ## Power Point Presentation
 

@@ -92,7 +92,7 @@ end
 ````
 
 #### Graphs
-
+![output](https://github.com/user-attachments/assets/065d0ef1-d95d-45db-99f1-62bf83d55c1f)
 ````julia
 with_theme() do
 	### Time Series Plot for Ammonia Levels
@@ -108,6 +108,7 @@ with_theme() do
 end
 ````
 
+![output-2](https://github.com/user-attachments/assets/cef9a10d-9933-4fd3-aa6b-adb1c4876678)
 ````julia
 with_theme() do
 	### Time Series Plot for Nitrite Levels
@@ -123,6 +124,7 @@ with_theme() do
 end
 ````
 
+![ammoni vs](https://github.com/user-attachments/assets/7495b90e-a1c7-4f5a-b975-9119d6348224)
 ````julia
 with_theme() do
     ### Scatter Plot: Ammonia vs. Nitrite (Colored by Filter Treatment)
@@ -145,6 +147,7 @@ with_theme() do
 end
 ````
 
+![output-3](https://github.com/user-attachments/assets/377542e1-b7e3-403f-8356-97ffc0f58c9f)
 ````julia
 with_theme() do
     # 1. Box Plot: Ammonia Levels by Filtration Treatment
@@ -185,6 +188,7 @@ with_theme() do
 end
 ````
 
+![output-4](https://github.com/user-attachments/assets/245c986a-d079-44bf-ba3b-705c8c37d12b)
 ````julia
 with_theme() do
     # 2. Box Plot: Nitrite Levels by Filtration Treatment
@@ -282,6 +286,7 @@ end
 
 #### Graphs
 
+
 ````julia
 with_theme() do
 	# Compute moving averages
@@ -291,6 +296,8 @@ with_theme() do
 	df.pH_MA = [mean(df.pH[max(1, i-window_size+1):i]) for i in 1:nrow(df)]
 end
 ````
+
+![rg1](https://github.com/user-attachments/assets/af40f6a7-49cc-490e-a699-a530391130ce)
 ````julia
 with_theme() do
 	# 1. Temperature over time with trend line
@@ -303,6 +310,8 @@ with_theme() do
 	fig1
 end
 ````
+
+![rg2](https://github.com/user-attachments/assets/85d25e75-ff83-4e6c-9342-3896453c6e66)
 ````julia
 with_theme() do
 	# 2. Dissolved Oxygen over time with trend line
@@ -315,6 +324,8 @@ with_theme() do
 	fig2
 end
 ````
+
+![rg3](https://github.com/user-attachments/assets/1f54131a-77d2-4f79-961d-e1d8385bf39c)
 ````julia
 with_theme() do
 	fig3 = Figure()
@@ -326,6 +337,8 @@ with_theme() do
 	fig3
 end
 ````
+
+![rg4](https://github.com/user-attachments/assets/c09d52ef-0aec-4ded-ad49-a50b0b8619a4)
 ````julia
 with_theme() do
 	fig4 = Figure()
@@ -335,6 +348,8 @@ with_theme() do
 	fig4
 end
 ````
+
+![rg5](https://github.com/user-attachments/assets/b047d4be-113f-4ffc-8f9f-5e5637b61261)
 ````julia
 
 with_theme() do

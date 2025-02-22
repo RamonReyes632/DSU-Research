@@ -45,6 +45,22 @@ Dennis McIntosh[^4]
 using CSV, CairoMakie , DataFrames, Dates, Statistics, Random, AlgebraOfGraphics
 ````
 #### Data cleaning and visualization 
+
+|   | Date       | Tank_Number | Filter_Treatment | Ammonia_mg_L | Nitrite_mg_L | Trial |
+|---|------------|-------------|------------------|--------------|--------------|-------|
+|1  | 0024-10-28 | 1           | CNTL             | 0.49         | 0.006        | 1     |
+|2  | 0024-10-28 | 2           | Shavings         | 0.51         | 0.001        | 1     |
+|3  | 0024-10-28 | 4           | Beads            | 0.49         | 0.002        | 1     |
+|4  | 0024-10-28 | 5           | Beads            | 0.51         | 0.002        | 1     |
+|5  | 0024-10-28 | 6           | Beads            | 0.52         | 0.002        | 1     |
+|6  | 0024-10-28 | 7           | Shavings         | 0.49         | 0.001        | 1     |
+|7  | 0024-10-28 | 8           | Shavings         | 0.52         | 0.001        | 1     |
+|8  | 0024-10-28 | 10          | Bio balls        | 0.51         | 0.002        | 1     |
+|9  | 0024-10-28 | 11          | Block            | 0.46         | 0.004        | 1     |
+|10 | 0024-10-28 | 13          | CNTL             | 0.5          | 0.002        | 1     |
+more...
+|150| 0024-11-22 | 18          | Bio balls        | 0.01         | 0.002        | 2     |
+
 ````julia
 begin
     # Load the CSV file
@@ -216,6 +232,21 @@ using CSV, CairoMakie , DataFrames, Dates, Statistics, Random
 ````
 
 #### Data
+
+|   | Date       | Tank_Number | Temperature_C | DO_mg_L | pH   | Filter_Treatment |
+|---|------------|-------------|---------------|---------|------|------------------|
+|1  | 0024-10-29 | 1           | 22.4          | 8.86    | 8.29 | CNTL             |
+|2  | 0024-10-29 | 2           | 22.4          | 8.39    | 8.08 | Shavings         |
+|3  | 0024-10-29 | 4           | 22.5          | 8.74    | 8.21 | Beads            |
+|4  | 0024-10-29 | 5           | 22.5          | 8.83    | 8.26 | Beads            |
+|5  | 0024-10-29 | 6           | 22.5          | 8.89    | 8.28 | Beads            |
+|6  | 0024-10-29 | 7           | 22.6          | 8.65    | 8.14 | Shavings         |
+|7  | 0024-10-29 | 8           | 22.5          | 8.54    | 8.07 | Shavings         |
+|8  | 0024-10-29 | 10          | 22.5          | 8.78    | 8.22 | Bio balls        |
+|9  | 0024-10-29 | 11          | 22.5          | 8.70    | 8.16 | Block            |
+|10 | 0024-10-29 | 13          | 22.6          | 8.84    | 8.30 | CNTL             |
+more...
+|120| 0024-11-22 | 18          | 23.0          | 8.28    | 8.20 | Bio balls        |
 
 ````julia
 begin

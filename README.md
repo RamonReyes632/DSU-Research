@@ -209,6 +209,142 @@ with_theme() do
 end
 ````
 
+### Bio-media Filtration daily water quality
+
+````julia
+using CSV, CairoMakie , DataFrames, Dates, Statistics, Random
+````
+
+#### Data
+
+````julia
+begin
+    # Load the CSV file
+    file_path = "/Users/renzo/Documents/Ramons_Code/Files/Bio_media_measurements.csv"
+    df = CSV.read(file_path, DataFrame, header=2)  # Skip the first row
+
+    # Rename columns properly
+    rename!(df, Dict(
+        "Date" => :Date,
+        "Tank Number" => :Tank_Number,
+        "Temperature in Celcius" => :Temperature_C,
+        "Do (mg/L)" => :DO_mg_L,
+        "pH levels" => :pH,
+		"Filter Treatment" => :Filter_Treatment
+    ))
+
+    # Convert data types
+    df.Date = Dates.Date.(df.Date, "mm/dd/yy")  # Convert date column
+    df.Tank_Number = Int.(df.Tank_Number)  # Ensure tank number is integer
+    df.Temperature_C = Float64.(df.Temperature_C)  # Convert temperature to float
+    df.DO_mg_L = Float64.(df.DO_mg_L)  # Convert DO to float
+    df.pH = Float64.(df.pH)  # Convert pH to float
+	df.Filter_Treatment  # Ensure tank number is integer
+
+    # Save cleaned data
+    CSV.write("Cleaned_Bio_media_measurements.csv", df)
+
+    # Display cleaned data
+    df#first(df, 5)
+end
+````
+
+#### Graphs
+
+````julia
+with_theme() do
+	# Compute moving averages
+	window_size = 5
+	df.Temperature_MA = [mean(df.Temperature_C[max(1, i-window_size+1):i]) for i in 1:nrow(df)]
+	df.DO_MA = [mean(df.DO_mg_L[max(1, i-window_size+1):i]) for i in 1:nrow(df)]
+	df.pH_MA = [mean(df.pH[max(1, i-window_size+1):i]) for i in 1:nrow(df)]
+end
+
+````julia
+with_theme() do
+	# 1. Temperature over time with trend line
+	fig1 = Figure()
+	ax1 = Axis(fig1[1, 1], title="Temperature Over Time", xlabel="Date", ylabel="Temperature (°C)")
+	scatter!(ax1, df.Date, df.Temperature_C, label="Raw Data")
+	lines!(ax1, df.Date, df.Temperature_MA, color=:red, label="Moving Average")
+	axislegend(ax1)
+	#save("temperature_plot.png", fig1)
+	fig1
+end
+````
+````julia
+with_theme() do
+	# 2. Dissolved Oxygen over time with trend line
+	fig2 = Figure()
+	ax2 = Axis(fig2[1, 1], title="Dissolved Oxygen Over Time", xlabel="Date", ylabel="DO (mg/L)")
+	scatter!(ax2, df.Date, df.DO_mg_L, label="Raw Data")
+	lines!(ax2, df.Date, df.DO_MA, color=:red, label="Moving Average")
+	axislegend(ax2)
+	#save("do_plot.png", fig2)
+	fig2
+end
+````
+````julia
+with_theme() do
+	fig3 = Figure()
+	ax3 = Axis(fig3[1, 1], title="pH Levels Over Time", xlabel="Date", ylabel="pH")
+	scatter!(ax3, df.Date, df.pH, label="Raw Data")
+	lines!(ax3, df.Date, df.pH_MA, color=:red, label="Moving Average")
+	axislegend(ax3)
+	#save("ph_plot.png", fig3)
+	fig3
+end
+````
+````julia
+with_theme() do
+	fig4 = Figure()
+	ax4 = Axis(fig4[1, 1], title="pH Level Distribution", xlabel="pH", ylabel="Frequency")
+	hist!(ax4, df.pH, bins=10, color=:purple)
+	#save("ph_distribution.png", fig4)
+	fig4
+end
+````
+````julia
+
+with_theme() do
+    # 5. Boxplot: DO Levels by Filter Treatment (Optimized)
+    fig5 = Figure()
+    ax5 = Axis(fig5[1, 1], title="DO Levels by Filter Treatment", xlabel="Filter Treatment", ylabel="Dissolved Oxygen (mg/L)")
+
+    # Drop missing values to avoid errors
+    df_filtered = dropmissing(df, [:Filter_Treatment, :DO_mg_L])
+
+    # Ensure treatments are properly categorized
+    unique_treatments = unique(df_filtered.Filter_Treatment)
+    treatment_labels = string.(unique_treatments)  # Convert for x-axis labeling
+    treatment_to_num = Dict(t => i for (i, t) in enumerate(unique_treatments))  # Assign unique index
+
+    # Map categorical treatments to numeric positions
+    df_filtered.Filter_Treatment_Num = [treatment_to_num[t] for t in df_filtered.Filter_Treatment]
+
+    # Prepare data for boxplot
+    positions = df_filtered.Filter_Treatment_Num
+    values = df_filtered.DO_mg_L
+
+    # Ensure there is enough data for a valid boxplot
+    if length(unique(positions)) > 1  # Check if there are at least 2 categories
+        boxplot!(ax5, positions, values, 
+            color=:blue, 
+            show_notch=false, 
+            whiskerwidth=0.5, 
+            mediancolor=:red, 
+            outliercolor=:green, 
+            width=0.6
+        )
+        ax5.xticks = (1:length(unique_treatments), treatment_labels)  # Ensure x-axis labels align
+    else
+        error("Not enough valid data for a meaningful boxplot.")
+    end
+
+    fig5  # Display in Pluto.jl
+end
+````
+
 
 ## Power Point Presentation
 

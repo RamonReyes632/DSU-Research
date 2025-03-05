@@ -33,7 +33,8 @@ Dennis McIntosh[^4]
 ![IMG_3483](https://github.com/user-attachments/assets/6f02fd3f-ff20-4405-91be-0fb74f45181f)
 
 ## Poster (work in progress)
-![Slide1](https://github.com/user-attachments/assets/707495b9-9ce4-4efb-b6b7-c407d24186f1)
+![Uploading Screenshot 2025-03-05 at 4.35.37 PM.png…]()
+
 
 
 ## Data and Tables (using Julia/Python)

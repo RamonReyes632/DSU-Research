@@ -34,7 +34,8 @@ Dennis McIntosh[^4]
 ![IMG_3483](https://github.com/user-attachments/assets/6f02fd3f-ff20-4405-91be-0fb74f45181f)
 
 ## Poster (work in progress)
-![Uploading Screenshot 2025-03-05 at 4.35.37 PM.png…]()
+<img width="622" alt="Screenshot 2025-03-05 at 4 35 37 PM" src="https://github.com/user-attachments/assets/a750a9d3-1465-465f-8a35-fd6c7876e42b" />
+
 
 
 

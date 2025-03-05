@@ -405,7 +405,8 @@ end
 
 ![Slide4](https://github.com/user-attachments/assets/03fc9746-dd15-47c6-9bda-3d7010129b75)
 
-![Slide5](https://github.com/user-attachments/assets/aa7bd93b-5b4c-4e84-9751-c9812b2c3536)
+![Slide5]<img width="1002" alt="Screenshot 2025-03-05 at 4 57 21 PM" src="https://github.com/user-attachments/assets/78822c41-1ae1-49a7-8973-8bc35c2ec999" />
+
 
 ![Slide6](https://github.com/user-attachments/assets/43746750-4d9d-47a5-bda4-0cbcbda54e9b)
 

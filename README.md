@@ -19,7 +19,7 @@ Dennis McIntosh[^4]
 
 - [Abstract](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#abstract)
 
-- [Poster](https://github.com/RamonReyes632/DSU-Reswarch/blob/main/README.md#poster)
+- [Poster](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#poster)
 
 
 - [Data and Tables](https://github.com/RamonReyes632/DSU-Research/blob/main/README.md#data-and-tables-using-juliapython)
